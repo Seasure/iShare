@@ -1,0 +1,40 @@
+#Text1 {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 285px;
+    border-radius: 3px;
+    padding: 10px 15px 10px 15px;
+    margin: 0 auto 10px 50px;
+}
+
+#Password1,#Password2 {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 285px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px 50px;
+}
+
+#Button1 {
+    background-color: #10853c;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    width: 285px;
+    margin: 0 auto 10px 50px;
+    font-size: 18px;
+
+}
+
+#Button2 {
+    background-color: #10853c;
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    width: 285px;
+    margin: 0 auto 10px 50px;
+    font-size: 18px;
+}

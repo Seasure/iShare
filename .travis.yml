@@ -1,0 +1,34 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+
+#before_install:
+# - chmod +x gradlew
+
+script:
+  - mvn clean package -DskipTests=true
+
+after_success:
+  - cd ./target
+  - git init
+  - git config user.name "Starrier"
+  - git config user.email "1342878298@qq.com"
+  - git add spring-boot-jsp.war
+  - git commit -m "version 1"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+env:
+  global:
+  - GH_REF=https://github.com/Starrier/iShare.git
