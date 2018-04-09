@@ -1,23 +1,34 @@
-package org.starrier.ishare.entity;
-
-import lombok.Data;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package com.ishare.entity;
 
 /**
- * @Author Starrier
- * @Time 2018/3/3.
+ * Created by lenovo on 2018/4/3.
  */
-@Data
-@Entity
-@Table(name = "t_user")
 public class User {
-    @Id
-    @Column(name = "id")
     private int id;
     private String userName;
-    private  String password;
+    private String password;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
